@@ -1,0 +1,48 @@
+<!--
+ * @Author: yaods
+ * @Date: 2020-04-26 02:04:58
+ * @LastEditTime: 2020-04-26 02:17:37
+ * @Description: 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 400px;
+            height: 400px;
+            background-color: cadetblue;
+            /* border: blueviolet 10px solid; */
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            /* float: left; */
+            margin-top: 100px;
+        }
+        /*外边距重叠： 
+            浏览器在渲染相邻两个box时，如果垂直方向且相邻的box直接各设置上了外边距，
+            则浏览器只会取最大的那个外边距设置值。而从浏览器的调试工具中可以看到，实
+            际较小的那个外边距也有设置上，只是两边的外边距发生了重叠。 */
+        /* 清除外边距重叠 解决高度塌陷*/
+        .clearfix::before,
+        .clean::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div1 clearfix">
+        <div class="div2">
+
+        </div>
+    </div>
+</body>
+</html>

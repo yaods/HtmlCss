@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 10px solid red;
+            margin: 10px 0 0 10px;
+
+            /* 设置元素轮廓线，用法和border相同
+                特点：不影响可见框的大小    
+            */
+            /* outline: 10px solid blueviolet; */
+
+            /* 阴影：不影响布局
+                第一个值：水平偏移量
+                第二个值：垂直偏移量
+                第三个： 阴影的模糊半径
+                第四个：颜色
+            */
+            box-shadow: 0px 0px 20px blueviolet;
+
+            /* 上左-上右-下右-下左 
+                border-top-left-radius
+                border-top-right-radius
+                border-bottom-right-radius
+                border-bottom-left-radius
+
+                
+            */
+            
+            border-radius: 10px 20px 30px 60px;
+            
+            /* 圆 */
+            border-radius: 50%;
+        }
+        .box h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    aaa
+</body>
+</html>

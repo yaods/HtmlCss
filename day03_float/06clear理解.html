@@ -1,0 +1,46 @@
+<!--
+ * @Author: yaods
+ * @Date: 2020-04-26 01:43:41
+ * @LastEditTime: 2020-04-26 01:54:14
+ * @Description: 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border: 10px solid blue;
+            
+
+        }
+        
+        .outer::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            
+            float: left;
+        }
+        .box3{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            
+        </div>
+        <!-- <div class="box3"></div> -->
+    </div>
+    
+</body>
+</html>
