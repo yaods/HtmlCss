@@ -1,0 +1,62 @@
+<!--
+ * @Author: yaods
+ * @Date: 2020-04-27 10:54:35
+ * @LastEditTime: 2020-04-27 11:02:08
+ * @Description: 
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    
+    <style>
+        body{
+            height: 2000px;
+        }
+        .nav_bar{
+            width: 1210px;
+            height: 48px;
+            background-color: #E8E7E3;
+            margin: 50px auto;
+            /* 粘滞定位
+                    - 当元素的position属性设置为sticky时则开启了元素的粘滞定位
+                    - 粘滞定位和相对定位的特点基本一致，
+                        不同的是粘滞定位可以在元素到达某个位置时将其固定 */
+            position: sticky;
+            top: 0;
+        }
+        .nav_bar a{
+            float: left;
+            height: 48px;
+            width: 172px;
+            line-height: 48px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-family: PingFangSC-Regular, Verdana, Arial, '微软雅黑','宋体';
+        }
+        .nav_bar a:last-child{
+            width: 178px;
+        }
+        .nav_bar a:hover{
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_bar">
+        <a href="">HTML/CSS</a>
+        <a href="">Brower Side</a>
+        <a href="">Server Side</a>
+        <a href="">Programming</a>
+        <a href="">XML</a>
+        <a href="">Web Building</a>
+        <a href="">Reference</a>
+    </div>
+    
+</body>
+</html>

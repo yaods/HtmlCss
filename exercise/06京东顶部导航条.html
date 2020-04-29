@@ -1,0 +1,142 @@
+<!--
+ * @Author: yaods
+ * @Date: 2020-04-29 07:56:53
+ * @LastEditTime: 2020-04-29 17:10:46
+ * @Description: 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <style>
+        body{
+            font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif
+        }
+        
+        .top-bar-wrapper{
+            background-color: #E3E4E5;
+            border-bottom: 1px solid #DDDDDD;
+            
+        }
+        .top-bar{
+            background-color: #E3E4E5;
+            width: 1190px;
+            height: 30px;
+            margin: 0 365.5px;
+            line-height: 30px;
+        }
+        .location{
+            float: left;
+        }
+        .location .fas{
+            color: #f10215;
+        }
+        .top-bar a,
+        .top-bar span,
+        .top-bar i{
+            color: #999;
+            text-decoration: none;
+        }
+        .top-bar a:hover,
+        .top-bar a.highlighter{
+            color: #f10215;
+        }
+        .location .city-list{
+            display: none;
+            width: 332px;
+            height: 462px;
+            border:1px solid rgb(204, 204, 204);
+            position: absolute;
+            top: 30px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+        }
+        .current-city{
+            padding: 0 10px;
+            border: 1px solid transparent;
+            border-bottom: none;
+            position: relative;
+            z-index: 9999;
+        }
+        .location:hover .current-city{
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            border-bottom: none;
+        }
+        .location:hover .city-list{
+            display: block;
+        }
+        .shortcut{
+            float: right;
+        }
+        .shortcut li{
+            float: left;
+        }
+        .spacer{
+            width: 1px;
+            height: 10px;
+            background-color: #ccc;
+            margin: 11px 5px 0;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar">
+            <div class="location">
+                <div class="current-city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="javascript:;">广州</a>
+                </div>
+                
+                <div class="city-list">
+
+                </div>
+            </div>
+            <ul class="shortcut">
+                <li>
+                    <a href="javascript:;">你好，请登录</a>
+                    <a class="highlighter" href="javascript:;">免费注册</a>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <a href="javascript:;">我的京东</a>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <a class="highlighter" href="javascript:;">企业采购</a>
+                    <i class="fa fa-angle-down"></i>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <span href="javascript:;">客户服务</span>
+                    <i class="fa fa-angle-down"></i>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <span href="javascript:;">网站导航</span>
+                    <i class="fa fa-angle-down"></i>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <span href="javascript:;">手机京东</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
