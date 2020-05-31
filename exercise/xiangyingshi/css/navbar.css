@@ -1,0 +1,77 @@
+header {
+  border-bottom: solid 5px #16a085;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .logo {
+  color: #16a085;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header .navbar .collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .navbar .collapse .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .collapse .links a {
+  color: #777;
+  margin: 0 10px;
+}
+
+header .navbar .collapse .links a:hover {
+  color: #444;
+  font-weight: bold;
+}
+
+header .navbar .collapse .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar .collapse .form a {
+  color: #16a085;
+  border: solid 1px #16a085;
+  border-radius: .3rem;
+  padding: .3rem 1rem;
+  margin: 0 10px;
+}
+
+header .navbar .collapse .form a.form-bg {
+  background-color: #16a085;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar .collapse {
+    display: none;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
